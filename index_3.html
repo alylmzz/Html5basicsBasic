@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/CSS/utilities.css" />
+    <link rel="stylesheet" href="/CSS/lightbox.min.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <title>Html-5 Basics Part Three</title>
+  </head>
+  <body id="home">
+    <header class="hero">
+      <!-- we gave id to navbar for JavaScript -->
+      <div id="navbar" class="navbar top">
+        <!-- LOGO -->
+        <h1 class="logo">
+          <span class="text-primary"
+            ><i class="fas fa-book-open"></i> HTML 5</span
+          >
+          Basics
+        </h1>
+        <!-- NAVIGATION BAR -->
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="/index.html">Part One</a></li>
+            <li><a href="/index_2.html">Part Two</a></li>   
+            <!-- <li><a href="/index_3.html">Part Three</a></li>    -->
+            <li><a href="/index_4.html">Cheat Sheet</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- EXPLANATION -->
+      <div class="content">
+        <h1><strong>WELCOME TO HTML-5 BASICS</strong> </h1>
+        <p>
+         <strong> A Very Simple guide to understand the fundamentals of HTML-5 for beginners like Me</strong> 
+        </p>
+        <!-- <a href="#about" class="btn"> -->
+          <!-- <i class="fas fa-chevron-right"></i>Read More</a -->
+        
+      </div>
+    </header>
+    <main>
+        
+        <!--                        PART 3 START -->
+
+      <section id="lesson-1" >
+        <header class="section-header">
+          <h2>Section Three </h2>
+        </header>
+
+      <!-- block level elements -->
+      
+      <section  class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/blocklevel.png"
+              data-lightbox="cases"
+              data-title="Block Level Element">
+              <img src="/img/blocklevel.png" alt="" />
+            </a>
+            </div>
+          </div>
+          <div cl class="column">
+            <div class="column-2 bg-primary">
+              <h2>
+                Block Level Elements
+              </h2>
+              <p>
+                block level elements takes 100 percent width of the page. (stretches out
+                to the left and right as far as it can).So it basicially goes across the
+                whole page and next thing you put on the page will be on next line, For example a paragraph ( &lt;p>&lt;/&lt;p> ) is a block level element, so by default if you try to put another one next to it, even if they have 3 or 4 characters inside, and even if the codes were written side by side, that 3 character paragraph will push the other one, down by one line . Block level elements can be styled through CSS so that we can get the look we want on our page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+            <!-- Inlinee level elements -->
+
+          <section  class="solutions flex-columns">
+            <div class="row">
+              <div class="column">
+                <div class="column-1">
+                  <a
+              href="/img/inlinelevel.png"
+              data-lightbox="cases"
+              data-title="Inline Level Elements">
+              <img src="/img/inlinelevel.png" alt="" />
+            </a>
+                </div>
+              </div>
+              <div cl class="column">
+                <div class="column-2 bg-primary">
+                  <h2> Inline Level Elements</h2>
+                  <p>
+                    An inline element does not span accross the page. It only takes up that
+                    space it stays therefore next thing you put on page will just go to the right side of it .  Example , an image is an inline level element, so if we put two of it at same line of code, in browser they would stay side by side. So proper and desired positioning and styling can be achived through CSS
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+      <!-- Id's -->
+      <section class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/id.png"
+              data-lightbox="cases"
+              data-title="Id Elements">
+              <img src="/img/id.png" alt="" />
+            </a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">    
+              <h2>
+                Id's
+              </h2>
+              <p>
+                 <strong>id=""</strong> is a uniqe identifier that can only be used once.
+                  every id="" must be uniqe to where it used.
+                 <strong>Can not be used elsewhere</strong>. So when we use CSS or
+                 JavaScript to manipulate, we will know that we are only changing a certain
+                 thing. Example;<br> &lt;ul <strong>id="main-nav"</strong> > <br>
+                 &nbsp; &nbsp; &lt;li>&lt;a href="#">Home Page&lt;/a>&lt;/li> <br>
+                 &lt;/ul>  <br>. So whenever we want to manipulate this list in CSS ot JavaScript, we
+                 will use id="main-nav".
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <!-- Classes -->
+     <section class="solutions flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <a
+              href="/img/classes.png"
+              data-lightbox="cases"
+              data-title="Classes">
+              <img src="/img/classes.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-primary"> 
+            <h2>
+              Classes
+            </h2>
+            <p>
+              Classes are another identification method for HTML. Unlike id="", classes can be used multiple items. This way if we want to manipulate multiple things at once we wont have to change them one by one.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Entities-->
+      <section  class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/entities.png"
+              data-lightbox="cases"
+              data-title="Entities">
+              <img src="/img/entities.png" alt="" />
+            </a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              <h2>
+                Entities 
+              </h2>
+              <p>
+                Entities are short character combinations for different types of characters like Copyright &copy; 
+                or even codes themselves. <br>
+                 &lt;code> <br>
+                 &lt;title>Entities&lt;/title &gt; <br>
+                  &lt;/code> <br>
+                   The clean code you read here is shown on left side to show you how it can be written as text. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- division tag -->
+      <section class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/division.png"
+              data-lightbox="cases"
+              data-title="Division">
+              <img src="/img/division.png" alt="" />
+            </a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              <h2>
+                The Division Tag
+              </h2>
+              <p>
+                  The &lt;div> tag is nothing more than a container unit that encapsulates other page elements ,
+                  and divides the HTML document into sections. Web developers use &lt;div> elements to group together 
+                  HTML elements and apply CSS styles to many elements at once. For instance, by wrapping a set of paragraph
+                  elements into a &lt;div> element, the developer can take advantage of CSS styles and apply a font to 
+                  all paragraphs at once by applying a font style to the &lt;div> tag instead of coding the same 
+                  style for each paragraph element.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <!-- Semantics -->
+     <section class="solutions flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <a
+              href="/img/semantics.png"
+              data-lightbox="cases"
+              data-title="Semantics">
+              <img src="/img/semantics.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-primary">
+            <h2>
+              Semantics
+            </h2>
+            <p>
+              Semantics are used for giving meaning to mainly used divisions. For example rather then wrapping main header to a &lt;div> tag we can use  &lt;header> tag to make it certain in the beginning. Here are some examples of semantics. header>, &lt;nav>, &lt;footer>, &lt;aside>  Using semantics does not mean we can not use division. As we said before semantics are generally used for main divisions like headers or navigation. But for example in a main division we may need other divisions as well. Like in a galerry section we can create black & whitw and colorful photos divisions. Semantics and division used together for developers to get roadmap for themselves. 
+           
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section id="cases" class="cases  section-padding">
+        <header class="section-header" >
+          <h2>We Desire, We Design. Code Your Dreams</h2>
+          
+        </header>
+
+     <!-- footer -->
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100048033664823" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <p>This Page is Created For Learning and Fun Purposes Only, Copyright &copy; 2020 - Ali Yılmaz</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/lightbox.min.js"></script>
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+
+      // Smooth Scrolling
+      $("#navbar a, .btn").on("click", function (e) {
+        if (this.hash !== "") {
+          e.preventDefault();
+
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
+      });
+      
+    
+  
+    </script>
+  </body>
+</html>

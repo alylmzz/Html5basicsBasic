@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/CSS/utilities.css" />
+    <link rel="stylesheet" href="/CSS/lightbox.min.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <title>Cheat Sheet</title>
+  </head>
+  <body id="home">
+    <header class="hero">
+      <!-- we gave id to navbar for JavaScript -->
+      <div id="navbar" class="navbar top">
+        <!-- LOGO -->
+        <h1 class="logo">
+          <span class="text-primary"
+            ><i class="fas fa-book-open"></i> HTML 5</span
+          >
+          Basics
+        </h1>
+        <!-- NAVIGATION BAR -->
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="/index.html">Part One</a></li>
+            <li><a href="/index_2.html">Part Two</a></li>   
+            <li><a href="/index_3.html">Part Three</a></li>   
+            <!-- <li><a href="/index_4.html">Cheat Sheet</a></li> -->
+          </ul>
+        </nav>
+      </div>
+
+      <!-- EXPLANATION -->
+      <div class="content">
+        <h1><strong>WELCOME TO HTML-5 BASICS</strong> </h1>
+        <p>
+         <strong> A Very Simple guide to understand the fundamentals of HTML-5 for beginners like Me</strong> 
+        </p>
+        <!-- <a href="#about" class="btn"> -->
+          <!-- <i class="fas fa-chevron-right"></i>Read More</a -->
+        
+      </div>
+    </header>
+    <main>
+
+
+
+    <img src="/img/html_cheatsheet.png" alt="" style="padding: 20px 20px; " >
+     
+
+      <section id="cases" class="cases  section-padding">
+        <header class="section-header" >
+          <h2>We Desire, We Design. Code Your Dreams</h2>
+          
+        </header>
+
+     <!-- footer -->
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100048033664823" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <p>This Page is Created For Learning and Fun Purposes Only, Copyright &copy; 2020 - Ali Yılmaz</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/lightbox.min.js"></script>
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+
+      // Smooth Scrolling
+      $("#navbar a, .btn").on("click", function (e) {
+        if (this.hash !== "") {
+          e.preventDefault();
+
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
+      });
+      
+     
+    </script>
+  </body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/CSS/utilities.css" />
+    <link rel="stylesheet" href="/CSS/lightbox.min.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <title>Html-5 Basics Part Two</title>
+  </head>
+  <body id="home">
+    <header class="hero">
+      <!-- we gave id to navbar for JavaScript -->
+      <div id="navbar" class="navbar top">
+        <!-- LOGO -->
+        <h1 class="logo">
+          <span class="text-primary"
+            ><i class="fas fa-book-open"></i> HTML 5</span
+          >
+          Basics
+        </h1>
+        <!-- NAVIGATION BAR -->
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="/index.html">Part One</a></li>
+            <!-- <li><a href="/index_2.html">Part Two</a></li>    -->
+            <li><a href="/index_3.html">Part Three</a></li>   
+            <li><a href="/index_4.html">Cheat Sheet</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- EXPLANATION -->
+      <div class="content">
+        <h1><strong>WELCOME TO HTML-5 BASICS</strong> </h1>
+        <p>
+         <strong> A Very Simple guide to understand the fundamentals of HTML-5 for beginners like Me</strong> 
+        </p>
+        <!-- <a href="#about" class="btn"> -->
+          <!-- <i class="fas fa-chevron-right"></i>Read More</a -->
+        
+      </div>
+    </header>
+    <main>
+        
+        <!--                        PART 3 START -->
+
+      <section >
+        <header class="section-header">
+          <h2>Section Two </h2>
+        </header>
+
+      <!-- Forms -->
+      
+      <section  class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/forms.gif"
+              data-lightbox="cases"
+              data-title="Forms">
+              <img src="/img/forms.gif" alt="" />
+            </a>
+            </div>
+          </div>
+          <div cl class="column">
+            <div class="column-2 bg-primary">
+              <h2>
+                Forms
+              </h2>
+              <p>
+                Forms are needed for collecting user data given by user. Created with &lt;form> tag
+                &lt;form action="">/&lt;form> . The &lt;action=""> attribute here means when we submit form which page it should lead us. Or we can link it to our JavaScript form, JSON form etc. which normally how its done. Normally only forms with a name attribute will be submitted. We must put name="" attribute to our labels and inputs which we will learn now. Example; <br>
+                 &lt;form action="/07_forms_input.html" target="_blank">&lt;/&lt;form> <br>
+                  Every form needes 2 basic tags, &lt;label for="" id>&lt;/&lt;label> Which is the headline and data type for form and &lt;input type="text" id> the data we collect. Colecting the data itself is about back-end development. Notice the id attributes in &lt;label> and &lt;input> tags. These are here to simply identfy them. so later we can call and use them in JS or CSS or remember in the label we created for="" attribute, it will link them also. now these two are link with "user", This means when someone clicks "User Name" in web page it will automatically highlight input and make it writable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <!-- form types -->
+      <section class=" section-padding">
+        <header class="section-header">
+          <h2>Types Of Forms</h2>
+        </header>  
+          <section  class="solutions flex-columns">
+            <div class="row">
+              <div class="column">
+                <div class="column-1">
+                  <a
+                   href="/img/forrmtypes.jpg"
+                   data-lightbox="cases"
+                   data-title="Form Types">
+                    <img src="/img/forrmtypes.jpg" alt="" />
+                 </a>
+                </div>
+              </div>
+              <div cl class="column">
+                <div class="column-2 bg-primary">
+                  <p>
+                    There are multiple types of forms like getting, e-mail, user name, passwords Etc.
+                    Here in the gif you see some of them and what it means "it will automatically highlight input and make it writable." All of the forms on this giff will be written and explained here as codes. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+      <!-- Text Input Form -->
+      <section class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/textInput.png"
+              data-lightbox="cases"
+              data-title="Text Input">
+              <img src="/img/textInput.png" alt="" />
+            </a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              
+              <h2>
+                Text Input Form
+              </h2>
+              <p>
+                Normal text input are small txt add area like names or user id's We can limit them to certain max charater limit using maxlength="" attribute. EXAMPLE maxlength="20" will be limited to 20 characters. We can also limit minimum charater limit with minlength="" EXAMPLE minlength="6" will ask user to write at least 6 characters. We can add a placeholder to text areas if we want to give message to user using placeholder="" EXAMPLE placeholder="Pasword must be at least 6 characters" . This will add a half seen message in input area which will dissapear as user starts typing If we want a text input to be a must be filled area we can add "required" attribute , this way page won't be submitted until that required input is filled like in passwords. For any inputs that are not required to be filled, we can leave an empty option And if we want we can use maxlength="", minlength="", placeholder="", required in any form input that uses text like textarea input (which we will learn shortly)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- e-mail input area -->
+      <section class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/emailinput.png"
+              data-lightbox="cases"
+              data-title="E-Mail Input">
+              <img src="/img/emailinput.png" alt="" />
+            </a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">             
+              <h2>
+                E-mail Input Form 
+              </h2>
+              <p>
+                Enables user to submit their email or log in with email. Whwn this form is used, 
+                User must enter an email adress
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+     
+      <!-- Text area input -->
+      <section  class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/textarea.png"
+              data-lightbox="cases"
+              data-title="Text Input">
+              <img src="/img/textarea.png" alt="" />
+            </a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              <h2>
+                Text Area Input
+              </h2>
+              <p>
+               Enable user to send message, leave comment etc. Maximum or minimum character number can
+               be adjusted
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Select input -->
+      <section class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/selectinput.png"
+              data-lightbox="cases"
+              data-title="Select Input">
+              <img src="/img/selectinput.png" alt="" />
+            </a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              <h2>
+                Select Input
+              </h2>
+              <p>
+                Enables user to choose one of the options presented.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Number input -->
+      <section id="" class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/numberinput.png"
+              data-lightbox="cases"
+              data-title="Number Input">
+              <img src="/img/numberinput.png" alt="" />
+            </a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              <h2>
+                Number Input 
+              </h2>
+              <p>
+                Enables user to apply numbers via selectable increase or decrease action.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- date input -->
+       <section  class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/dateinput.png"
+              data-lightbox="cases"
+              data-title="Date Input">
+              <img src="/img/dateinput.png" alt="" />
+            </a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              
+              <h2>
+                Date Input
+              </h2>
+              <p>
+                Enables a calendar for user to choose desired date.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- radio input -->
+      <section  class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/radioinput.png"
+              data-lightbox="cases"
+              data-title="Radio Input">
+              <img src="/img/radioinput.png" alt="" />
+            </a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              <h2>
+                Radio Input
+              </h2>
+              <p>
+                Present options but user can only choose one of them. Like membership options
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- Check-box Input -->
+        <section  class="solutions flex-columns">
+          <div class="row">
+            <div class="column">
+              <div class="column-1">
+                <a
+              href="/img/checkboxinput.png"
+              data-lightbox="cases"
+              data-title="Check-Box Input">
+              <img src="/img/checkboxinput.png" alt="" />
+            </a>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-2 bg-primary"> 
+                <h2>
+                  Check-Box Input
+                </h2>
+                <p>
+                  Present options for user so they can choose more than one. Can be selected all or can be limited to a number 
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+         <!-- Creating Submit and Reset Buttons -->
+         <section  class="solutions flex-columns">
+          <div class="row">
+            <div class="column">
+              <div class="column-1">
+                <a
+              href="/img/creatingsubmitreset.png"
+              data-lightbox="cases"
+              data-title="Submit & Reset Buttons">
+              <img src="/img/creatingsubmitreset.png" alt="" />
+            </a>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-2 bg-primary"> 
+                <h2>
+                  Creating Submit & Reset Buttuns
+                </h2>
+                <p>
+                  Enables Submit and Reset buttton options. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+     
+
+      <section id="cases" class="cases  section-padding">
+        <header class="section-header" >
+          <h2>We Desire, We Design. Code Your Dreams</h2>
+          
+        </header>
+
+     <!-- footer -->
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100048033664823" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <p>This Page is Created For Learning and Fun Purposes Only, Copyright &copy; 2020 - Ali Yılmaz</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/lightbox.min.js"></script>
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+
+      // Smooth Scrolling
+      $("#navbar a, .btn").on("click", function (e) {
+        if (this.hash !== "") {
+          e.preventDefault();
+
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
+      });
+      
+     
+    </script>
+  </body>
+</html>

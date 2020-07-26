@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/CSS/utilities.css" />
+    <link rel="stylesheet" href="/CSS/lightbox.min.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <title>Html-5 Basics Part One</title>
+  </head>
+
+  <body id="home">
+    <header class="hero">
+
+      <!-- we gave id to navbar for JavaScript -->
+      <div id="navbar" class="navbar top">
+
+        <!-- LOGO -->
+        <h1 class="logo">
+          <span class="text-primary"
+            ><i class="fas fa-book-open"></i> HTML 5</span
+          > Basics
+        </h1>
+
+        <!-- NAVIGATION BAR -->
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <!-- <li><a href="/index.html">Part One</a></li> -->
+            <li class="1"><a href="/index_2.html">Part Two</a></li>   
+            <li><a href="/index_3.html">Part Three</a></li>   
+            <li><a href="/index_4.html">Cheat Sheet</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- EXPLANATION -->
+      <div class="content">
+        <h1><strong>WELCOME TO HTML-5 BASICS</strong> </h1>
+        <p>
+          <strong> A Very Simple guide to understand the fundamentals of HTML-5 for beginners like Myself.
+            Very basic, mobile friendly start version.
+          </strong>  </p>
+        <!-- <a href="#about" class="btn"> -->
+          <!-- <i class="fas fa-chevron-right"></i>Read More</a> -->
+      </div>
+    </header>
+    
+    <main>
+  
+        <!-- our utility class as a flex container -->
+        <div  class="flex-items" >
+          <div>
+            <h3 >What is HTML?</h3>
+            <p >
+              HTML stands for "Hyper Text Markup Language" and it is the
+              standard programming language for Web pages. Every web page has
+              HTML elements are the building blocks of those pages and they are
+              represented by elements called &lt;> tags.
+            </p>
+          </div>
+
+          <div>
+            <h3>HTML Tags</h3>
+            <p>
+              Every Web Page has content inside to show the user what it consits
+              of. And to understand what those things are and how to show them,
+              it needs HTML Tags. HTML Tags are the hidden keywords within a web
+              page that define how your web browser must format and display the
+              content.
+            </p>
+          </div>
+          <div>
+            <h3>Creating A Tag</h3>
+            <p>
+              Most tags must have two parts, an opening and a closing part. For
+              example, &lt;html> is the opening tag and &lt;/html> is the
+              closing tag. Closing tag has the same text as the opening tag, but
+              has an additional forward-slash ( / ) character. But some tags are
+              an exception , and where a closing tag is not required. The
+              &lt;img> tag for showing images is one example of this. Each HTML
+              file must have the essential tags for it to be valid, so that web
+              browsers can understand it and display it correctly.
+            </p>
+          </div>
+        </div>
+      </section>
+
+        <!--                        PART 1 START -->
+
+      <section  >
+        <header class="section-header">
+          <h2>Section One - Part one </h2>
+        </header>
+
+      <!-- About= Creating An index.html -->
+ß
+      
+      <section  class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/creatingIndex.gif"
+              data-lightbox="cases"
+              data-title="Creating New File"
+            >
+              <img src="/img/creatingIndex.gif" alt="" />
+            </a>
+          
+            </div>
+          </div>
+          <div cl class="column">
+        <div class="column-2 bg-primary">
+              <h4>
+                Here we work with VSCode which is the most popular for web
+                development. <br> By the way, don't forget to click on images to enlarge them
+              </h4>
+              <h2>
+                Creating Your Web Page
+              </h2>
+              <p>
+                To Create your very first web page; first create a folder as you
+                like on your desktop and then open your choosen text editor . In
+                VSCode Choose file + open, then select the folder you created.
+                On the left side of the editor you will see explorer tab as you
+                see in the picture ( if you can't, go to view appearance then
+                select the side bar option. or click cmd+b ) . In explorer tab
+                you will see the folder you created before. Now when you hower
+                on its name you will see some small pictures pop up. Select the
+                sheet one with plus sign on it. And name it to
+                <strong> index.html </strong>. We called our first page index.html because 
+                index.html is the main page of every site. To put it simply, index.html is the main,
+                very first HOME page you see on any site. Now your first site is ready to create.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About= Creating An index.html -->
+      <section class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/maintagorder.png"
+              data-lightbox="cases"
+              data-title="Main Tags Order"
+            >
+              <img src="/img/maintagorder.png" alt="" />
+            </a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              
+              <h2>
+                Creating Your Tags
+              </h2>
+              <p>
+                Very first thing we must put on an html file is the <strong>doctype</strong>. With this we tell the browser to read in spesific document type like HTML5 or XHTML or HTML4.0.1. Then what we need is an html tag looks like &lt;html>&lt;/html>. This tag defines the document as web page and identifies the beginning and end of the HTML document. We write all other tags between the html tags (&lt;html>Right Here&lt;/html>). And inside it we need &lt;head> and &lt;body> tags. Rather then some exceptions like title, whatever  is on &lt;head> tag wont be seen by the user. It is for the developer to create spesifics of the site like style or meta tags which we will learn all about shortly. Inside head tag must be the &lt;title> tag. Whatever name we give to the &lt;title> tag will be shown name of the page on browsers tab. And final element of the &lt;html> tag is  the &lt;body> tag. It simply consists of what we see on any site when loaded on internet, everyting we see as a user goes here.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- tag attributes -->
+      <section class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/attributes.png"
+              data-lightbox="cases"
+              data-title="Tag Attributes">
+              <img src="/img/attributes.png" alt="" />
+            </a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              
+              <h2>
+                Tag Attributes
+              </h2>
+              <p>
+                Attributes are elements allow you to customise a tag. They are defined within the opening tag. For example, <br> <strong>&lt;body id="home"></strong>. <br> Attributes are often assigned a value using the equals sign, such as class="" or id="", but there are some that only need to be declared in the tag like this: &lt;hr noshade>. Most attributes are optional for most tags, and are only used when you want to change something about the default way a tag is displayed by the browser. However, some tags such as the &lt;img> tag has required attributes such as src="" which is the source of the image. It is needed for the browser to display the web page properly. There are so many attributes to account for, for more information please visit <a href="https://www.w3schools.com/html/html_attributes.asp" class="btn-w3" target="_blank">w3schools</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class=" section-padding">
+        <header class="section-header">
+          <h2>Easy Way To Fill Up Main Tags</h2>
+        </header>  
+          <section  class="solutions flex-columns">
+            <div class="row">
+              <div class="column">
+                <div class="column-1">
+                  <a
+                  href="/img/emmet.gif"
+                  data-lightbox="cases"
+                  data-title="Da Cool Emmet" >
+                  <img src="/img/emmet.gif" alt=""/>
+                </a>                
+              </div>
+              </div>
+              <div cl class="column">
+                <div class="column-2 bg-primary">
+                  <p>
+                    If you type exclamation mark "!" in your keyboard and hit enter or tab, VSCode will automaticly fill up all necessary tag and some main meta tags for you. This is called emmet. Not just that but as you write your code, you will see that emmet does the same thing for every code piece. Take your time to learn about emmet. Denifenetly will save you a lot of time 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+            <!-- Message -->
+          <header class="section-header">
+            <h2>Don't Forget to learn emmets' cool stuff <a href="https://code.visualstudio.com/docs/editor/emmet" class="btn-w3" target="-blank">here</a> !!!</h2>
+          </header>  
+
+      <!-- Meta tags & Seacrh engines -->
+      <section  class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/metatags.png"
+              data-lightbox="cases"
+              data-title="Meta Tags & Search Engines"
+            >
+              <img src="/img/metatags.png" alt="" />
+            </a>          
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              <h2>
+                Meta Tags & Search Engines
+              </h2>
+              <p>
+                Meta tags are tags or snippets that describes our pages contents. They don't appear in the body tag so nobody sees them. They just describe things about pages content. For example <br> &lt;meta charset="UTF-8"> (charset) <br> is a meta tag specifies the character encoding of the page. Meta tags are also important for availabity to be found for a web page. Because search engines  search through them to see what the page consist of. For example;<br> &lt;meta name="description" content="This is Meta Tag example">. <br> Whatever we write instead of "This is Meta Tag example", will be seen as description on search engines. And adding keywords meta tag will enable search engines to look through them and to check if those words matches users' search. So adding spesific keywords about our page will make it easy to be found.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- typography -->
+      <section class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/typography.gif"
+              data-lightbox="cases"
+              data-title="Typography"
+            >
+              <img src="/img/typography.gif" alt="" />
+            </a>            
+          </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              
+              <h2>
+                Typography
+              </h2>
+              <p>
+                Typography in HTML has gotten better over the years but still limited. But adding outside sources like fonts is an available option. We can can fonts, font-sizes, colors and play with many things to make our artical more alluring. Its about how you can built the structure of texts on your website. Main elements to create our text fields are headings and paragraps. Headings are headlines in HTML, generated with &lt;h1>&lt;/h1> tag and they are from &lt;h1> to &lt;h6>, Heading 1 or h1 is the biggest and most important and h6 is the smallest. They are block elements, and has their own block. Can be stiled through CSS. And Paragraphs are created with &lt;p>&lt;/p>  tag and can take up as word as you like. Every paragraph is also a block element . Can be modified with CSS. Check out the trick on gif to learn making dummy text to a paragraph.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+                          <!-- PART 2 START -->
+
+      <section >
+        <header class="section-header">
+          <h2>Section One - Part Two </h2>
+        </header>
+
+      <!-- links -->
+      <section id="" class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/link.png"
+              data-lightbox="cases"
+              data-title="Links"
+            >
+              <img src="/img/link.png" alt="" />
+            </a>          
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              
+              <h2>
+                Links 
+              </h2>
+              <p>
+                When adding sources to our web page, we use links. There is an &lt;a> tag and a &lt;link> tag. For outside sources &lt;link> tag an inside sources &lt;a> tag are better options. For example &lt;a href="http://google.com">Click For Google&lt;/a> will still take you to google even if anchor tag is build to link inside sources. href="" attribute is used for defining the source adress like in the google example. If an element, like another HTML page of our work, is an inside source we use forward-slash ( / ) character to search our computer. When linking outside pages to our website, a link will open it in the page you are in, to prevent that we must use target="_blank" attribute like <br> &lt;a href="http://google.com" target="_blank"> <a href="http://google.com" target="_blank" class="btn-w3"> Click For Google</a> &lt;/a> <br> Seriously click it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- Images & Videos -->
+       <section  class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/imgadd.gif"
+              data-lightbox="cases"
+              data-title="Images & Videos"
+            >
+              <img src="/img/imgadd.gif" alt="" />
+            </a>          
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              
+              <h2>
+                Images & Videos 
+              </h2>
+              <p>
+                Images & Videos &lt;img src="" alt=""> this is the tag usage for images. src="" means source for image and alt="" means alternative text, meaning if image wont be shown for any reason, what text should be shown instead. Images can be linked from both inside and outside source. Same as links. <br> &lt;img src="/images/sample.jpg" alt="My Image"> <br> is a like to inside source. When we want to add a video to our page we use <br> &lt;video src="">&lt;/video> tag. <br> But this alone will add the video as an image, to able to play, full screen etc. we need controls attribute in tag. Example ; &lt;video controls src="">&lt;/video> . If we want the video to autoplay when the page loads we add autoplay attribute to tag ; <br />&lt;video autoplay controls src="">&lt;/video>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- lists -->
+      <section  class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <a
+              href="/img/lists.png"
+              data-lightbox="cases"
+              data-title="Lists"
+            >
+              <img src="/img/lists.png" alt="" />
+            </a>            
+          </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              
+              <h2>
+                Lists
+              </h2>
+              <p>
+                There are 2 types of lists. Unordered Lists (by default gives items simple dots by order) written with &lt;ul> tag, and Ordered Lists, (by default gives items numbers from 1 to end with order) written with &lt;ol> tag. When we write items inside the lists, we use <strong>&lt;li></strong> tag. Ordered lits .  Since lists tend to easily get styled within CSS, people tend to use unordered lists and style them as they like. Futhermore these lists are mainly used for navigation or side bar menu styling. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- Nested Lists -->
+        <section  class="solutions flex-columns">
+          <div class="row">
+            <div class="column">
+              <div class="column-1">
+                <a
+                href="/img/nestedlist.png"
+                data-lightbox="cases"
+                data-title="Nested LİSTS"
+              >
+                <img src="/img/nestedlist.png" alt="" />
+              </a>            
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-2 bg-primary">
+                
+                <h2>
+                  Nested Lists 
+                </h2>
+                <p>
+                  To simply put it, list within list. Like book sections and chapters. Great use for multi layered menu styles. So take your time to learn these with unordered lists.
+                  
+                </p>
+                <br>
+                <h2>
+                  Tables
+                </h2>
+                <P>Tables are used for getting information from users but really old to use. With advanced
+                  development of HTML and CSS, more respansive, beautiful ways are easy to do at the moment. Since not many people doesn't use them, I am not gonna explain more. But if you want to check <a href="https://www.w3schools.com/html/html_tables.asp" target="_blank" class="btn-w3">HERE</a> is the link. 
+                </P>
+              </div>
+            </div>
+          </div>
+        </section>
+
+          <!-- messege -->
+      <section id="cases" class="cases  section-padding">
+        <header class="section-header" >
+          <h2>We Desire, We Design. Code Your Dreams</h2>
+        </header>
+
+            <!-- footer -->
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100048033664823" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <p>This Page is Created For Learning and Fun Purposes Only, Copyright &copy; 2020 - Ali Yılmaz </p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/lightbox.min.js"></script>
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+
+      // Smooth Scrolling
+      $("#navbar a, .btn").on("click", function (e) {
+        if (this.hash !== "") {
+          e.preventDefault();
+
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
+      });
+
+    </script>
+  </body>
+</html>
